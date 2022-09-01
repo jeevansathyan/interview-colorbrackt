@@ -1,0 +1,30 @@
+<div class="container">
+  <div>
+    <h3 style="text-align: center;">Employee details</h3>
+  </div>
+  <div>
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">Employee Id</th>
+          <th scope="col">Name</th>
+          <th scope="col">Company</th>
+          <th scope="col">Designation</th>
+          <th scope="col">Company Logo</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let i of employeeList">
+
+          <th scope="row">{{i.id}}</th>
+          <td><a class="emp-details-link" href="">{{i.name}}</a></td>
+          <td><a class="emp-details-link" href="">{{i.company}}</a></td>
+          <td><a class="emp-details-link" href="">{{i.designation}}</a></td>
+          <td><a class="emp-details-link" href=""><img style="width:80px ; height: 40px;" src="{{i.company_logo}}"
+                alt=""></a></td>
+        </tr>
+      </tbody>
+
+    </table>
+  </div>
+</div>
